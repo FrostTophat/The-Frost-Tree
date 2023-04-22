@@ -1,12 +1,12 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
+	name: "The Frost Tree",
+	id: "3362",
+	author: "FrostTophat",
+	pointsName: "Cold points",
 	modFiles: ["layers.js", "tree.js"],
 
-	discordName: "",
-	discordLink: "",
+	discordName: "Frost Tophat Server",
+	discordLink: "https://discord.gg/J3wZHGp39R",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }
