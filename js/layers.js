@@ -39,4 +39,5 @@ addLayer("p", {
             description: "Doubles Snowflakes gain",
             cost: new Decimal(100),
         },
+    },
 })
