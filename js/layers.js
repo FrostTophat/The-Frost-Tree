@@ -24,5 +24,13 @@ addLayer("p", {
     hotkeys: [
         {key: "S", description: "S: Reset for Snowflakes", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true}
+    layerShown(){return true},
+    upgrades: {
+        11: {
+            description: "Doubles Cold Points gain",
+            cost: new Decimal(10),
+        12: {
+            description: "Triples Cold Points gain",
+            cost: new Decimal(30),
+        },
 })
