@@ -30,9 +30,11 @@ addLayer("p", {
         11: {
             description: "Doubles Cold Points gain",
             cost: new Decimal(10),
+        },
         12: {
             description: "Triples Cold Points gain",
             cost: new Decimal(30),
+        },
         13: {
             description: "Doubles Snowflakes gain",
             cost: new Decimal(100),
