@@ -40,7 +40,8 @@ function canGenPoints(){
 // Calculate points/sec!
 function getPointGen() 
 {if(hasUpgrade("S", 11)) gain = gain.mul(2)}
-{if(hasUpgrade("S", 12)) gain = gain.mul(3)
+{if(hasUpgrade("S", 12)) gain = gain.mul(3)}
+{
 	if(!canGenPoints())
 		return new Decimal(0)
 
