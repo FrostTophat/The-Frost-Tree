@@ -7,20 +7,20 @@ let modInfo = {
 
 	discordName: "Frost Tophat Server",
 	discordLink: "https://discord.gg/J3wZHGp39R",
-	initialStartPoints: new Decimal (10), // Used for hard resets and new players
+	initialStartPoints: new Decimal (0), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.1",
+	name: "Early Development",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+	<h3>v0.1</h3><br>
+		- Added first reset.<br>
+		- Added first upgrde.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -38,7 +38,9 @@ function canGenPoints(){
 }
 
 // Calculate points/sec!
-function getPointGen() {
+function getPointGen() 
+{if(hasUpgrade("S", 11)) gain = gain.mul(2)}
+{if(hasUpgrade("S", 12)) gain = gain.mul(3)
 	if(!canGenPoints())
 		return new Decimal(0)
 
