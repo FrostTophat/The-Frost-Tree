@@ -14,6 +14,7 @@ addLayer("p", {
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
+        if(hasUpgrade("S", 13)) gain = gain.mul(2)
         mult = new Decimal(1)
         return mult
     },
@@ -32,5 +33,8 @@ addLayer("p", {
         12: {
             description: "Triples Cold Points gain",
             cost: new Decimal(30),
+        13: {
+            description: "Doubles Snowflakes gain",
+            cost: new Decimal(100),
         },
 })
